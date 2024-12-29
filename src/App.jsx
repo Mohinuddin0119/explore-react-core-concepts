@@ -10,6 +10,7 @@ import Event from './event'
 import Counter from './counter'
 import Users from './users'
 import Friends from './Friends'
+import Posts from './core-concepts-recap/Posts'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,7 +33,20 @@ function App() {
   ]
   return (
     <>
-      <h1>Vite + React</h1>
+      <h2>React core concepts recap</h2>
+      <ol style={{margin:'20px'}}>
+        <li>Components</li>
+        <li>JSX</li>
+        <li>props</li>
+        <li>event handler</li>
+        <li>state</li>
+        <li>load data</li>
+      </ol>
+      <hr />
+      <Posts></Posts>
+
+      <hr style={{margin:'50px'}} />
+      <h2>React core concepts</h2>
       <Friends></Friends>
       <Users></Users>
       <Todo task='learn React' isDone={true}></Todo>
